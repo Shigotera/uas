@@ -1,0 +1,663 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.openbtn,
+.closebtn {
+    display: none;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    position: absolute;
+    margin: 2% 6%;
+    right: 10px;
+    transition: transform 0.3s;
+}
+
+.openbtn img,
+.closebtn img {
+    width: 100%;
+    height: 100%;
+}
+
+/* Responsive */
+@media (max-width: 700px) {
+
+    /* SATU */
+    .openbtn,
+    .closebtn {
+        display: block;
+    }
+
+    .nav-links ul {
+        text-align: right;
+        margin: 20% -20%;
+    }
+
+    .nav-links ul li {
+        display: block;
+        margin: 20px 20%;
+    }
+
+    .nav-links {
+        position: absolute;
+        background-image: url(images/menu_bg.jpg);
+        height: 100vh;
+        width: 100%;
+        top: 0;
+        right: -100%;
+        z-index: 2;
+        transition: right 0.3s ease-in-out;
+    }
+
+    .nav-links.active {
+        right: 0;
+    }
+
+    .box {
+        width: 100%;
+        padding: 0 10px;
+    }
+
+    .undermentality {
+        margin-top: 50%;
+        max-width: 100%;
+    }
+
+    /* DUA */
+}
+
+@font-face {
+    font-family: myFirstFont;
+    src: url(fonts/Florsn02.woff);
+}
+
+body {
+    font-family: myFirstFont;
+    background: url(images/menu_bg.jpg) no-repeat;
+    background-size: 100% 100%;
+    background-attachment: fixed;
+}
+
+/* SECTION SATU */
+.satu {
+    min-height: 100vh;
+    width: 100%;
+    background-size: 100%;
+    position: relative;
+}
+
+nav {
+    display: flex;
+    padding: 2% 6%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 150px;
+}
+
+.nav-links {
+    flex: 1;
+    text-align: right;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: rgb(154, 71, 255);
+}
+
+.nav-links ul li {
+    list-style: none;
+    display: inline-block;
+    padding: 8px 12px;
+    position: relative;
+}
+
+.nav-links ul li::after {
+    content: '';
+    width: 0;
+    height: 2px;
+    display: block;
+    margin: auto;
+    transition: 0.5s;
+}
+
+.nav-links ul li:hover:after {
+    width: 100%;
+}
+
+.box {
+    width: 600px;
+    height: 100%;
+    padding-top: 29%;
+    padding-left: 6%;
+}
+
+.undermentality {
+    max-width: 31%;
+}
+
+/* SECTION DUA */
+.dua {
+    padding: 80px;
+    text-align: left;
+    max-height: calc(100vh - 80px);
+    background-color: #e5dcfb;
+}
+
+.dua h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    color: #745bc7;
+}
+
+.news {
+    padding-top: 20px;
+    text-align: center;
+}
+
+.news .btn {
+    display: inline-block;
+    text-decoration: none;
+    border: 1px solid #745bc7;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    margin-top: 20px;
+    color: #745bc7;
+}
+
+.news h3 {
+    margin-top: 10px;
+    text-align: left;
+    margin-left: 18%;
+}
+
+.news h4 {
+    margin-top: 20px;
+    text-align: left;
+    margin-left: 18%;
+    color: #745bc7;
+}
+
+/* SECTION TIGA */
+.tiga {
+    padding: 80px;
+    text-align: left;
+    max-height: calc(100vh - 80px);
+}
+
+.tiga h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    margin-left: 15%;
+    color: #745bc7;
+}
+
+.carousel {
+    padding-top: 20px;
+    width: 50%;
+    margin: 0 auto;
+    color: #745bc7;
+}
+
+.tiga .btn {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    border: 1px solid #745bc7;
+    padding: 12px 34px;
+    font-size: 13px;
+    background: transparent;
+    cursor: pointer;
+    margin: 20px auto;
+    color: #745bc7;
+    width: fit-content;
+}
+
+/* NEWS PAGE */
+.page2 h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    margin-left: 15%;
+    color: #745bc7;
+}
+
+.news2 {
+    margin-right: 50px;
+}
+
+.news2 h3 {
+    margin-top: 10px;
+    text-align: left;
+    font-size: 1.1666666667rem;
+    margin-left: 18%;
+}
+
+.news2 h4 {
+    margin-top: 20px;
+    text-align: left;
+    font-size: 1.1666666667rem;
+    margin-left: 18%;
+    color: #745bc7;
+}
+
+/* PROFILE PAGE */
+.page3 h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    margin-bottom: 70px;
+    margin-left: 15%;
+    color: #745bc7;
+}
+
+.page3 {
+    display: flex;
+    flex-direction: column;
+}
+
+.page3 h1 {
+    font-size: 36px;
+    margin-top: 20px;
+    color: #745bc7;
+}
+
+.contentpage {
+    display: flex;
+    align-items: center;
+    width: 80%;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+
+.contentpage h3 {
+    font-size: 20px;
+    font-size: 3.3333333333vw;
+    font-weight: 700;
+    margin: 10px auto;
+}
+
+.contentpage img {
+    max-width: 400px;
+    margin: auto;
+}
+
+.contentpage p {
+    font-size: 1.1666666667rem;
+    line-height: 1.8;
+    letter-spacing: 1px;
+}
+
+.contentpage .profile_txt {
+    padding-left: 20px;
+}
+
+.profile_solo ul li {
+    margin-bottom: 50px;
+}
+
+.profile_solo ul li {
+    margin-bottom: 50px;
+}
+
+.profile_solo .solo_name {
+    display: block;
+}
+
+.profile_solo .solo_name p {
+    text-align: center;
+    font-size: 20px;
+    font-size: 5.3333333333vw;
+    font-weight: 700;
+    margin: 15px 0 5px;
+}
+
+.profile_solo .solo_sns ul {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+    margin: 0px 0 0px;
+}
+
+.profile_solo .solo_sns ul li {
+    display: flex;
+    flex-direction: column;
+    width: auto;
+    margin: 4px 10px;
+}
+
+.profile_solo .solo_sns ul li a {
+    font-size: 19px;
+    font-size: 5.0666666667vw;
+    color: #745bc7;
+}
+
+.profile_solo .solo_sns ul li a p {
+    line-height: 1;
+    font-size: 9px;
+    font-size: 2.4vw;
+}
+
+.profile_solo {
+    width: 100%;
+    margin: 0 auto;
+}
+
+.profile_solo ul {
+    display: flex;
+    margin: 0 0 0 -10.33%;
+}
+
+.profile_solo ul li {
+    margin: 0 0 0 10%;
+    width: 23%;
+    margin-bottom: 50px;
+    margin-top: 50px;
+}
+
+.profile_solo .solo_name {
+    display: block;
+}
+
+.profile_solo .solo_name p {
+    text-align: center;
+    font-size: 20px;
+    font-size: 1.6666666667rem;
+    font-weight: 700;
+    margin: 15px 0 5px;
+}
+
+.profile_solo .solo_sns ul {
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.profile_solo .solo_sns ul li a {
+    font-size: 28px;
+    font-size: 2.3333333333rem;
+}
+
+.profile_solo .solo_sns ul li a p {
+    line-height: 1;
+    font-size: 9px;
+    font-size: 0.75rem;
+}
+
+
+.biography .y2019 dl:not(.y2019) {
+    display: none !important;
+}
+
+.biography .y2020 dl:not(.y2020) {
+    display: none !important;
+}
+
+.biography .y2021 dl:not(.y2021) {
+    display: none !important;
+}
+
+.biography .y2022 dl:not(.y2022) {
+    display: none !important;
+}
+
+.biography .y2023 dl:not(.y2023) {
+    display: none !important;
+}
+
+.biography .y2024 dl:not(.y2024) {
+    display: none !important;
+}
+
+.biography .y2025 dl:not(.y2025) {
+    display: none !important;
+}
+
+.biography dl dt {
+    width: 3.5em;
+    font-size: 12px;
+    font-size: 3.2vw;
+}
+
+.biography dl dd {
+    flex: 1;
+    font-size: 12px;
+    font-size: 3.2vw;
+}
+
+.biography {
+    width: 100%;
+    margin-left: 25%;
+    width: 60%;
+}
+
+.biography dl dt {
+    width: 6.5em;
+    font-size: 12px;
+    font-size: 3.2vw;
+}
+
+.biography dl dd {
+    flex: 1;
+    font-size: 12px;
+    font-size: 3.2vw;
+}
+
+
+.biography h3 {
+    font-size: 14px;
+    font-size: 1.1666666667rem;
+    color: #745bc7;
+    margin: 50px auto 10px;
+}
+
+.biography dl {
+    display: flex;
+    margin: 10px auto;
+}
+
+.biography dl dt {
+    width: 3.5em;
+    font-size: 14px;
+    font-size: 1.1666666667rem;
+}
+
+.biography dl dd {
+    flex: 1;
+    font-size: 14px;
+    font-size: 1.1666666667rem;
+}
+
+.biography {
+    width: 70%;
+}
+
+.biography dl dt {
+    width: 6.5em;
+    font-size: 14px;
+    font-size: 1.1666666667rem;
+}
+
+.biography dl dd {
+    flex: 1;
+    font-size: 14px;
+    font-size: 1.1666666667rem;
+}
+
+/* DISCOGRAPHY */
+#discography .disco_sub_menu {
+    margin: 60px auto 40px;
+}
+
+#discography .disco_sub_menu ul {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#discography .disco_sub_menu ul li {
+    border-right: 1px solid #745bc7;
+    line-height: 1;
+}
+
+#discography .disco_sub_menu ul li:first-child {
+    border-left: 1px solid #745bc7;
+}
+
+#discography .disco_sub_menu ul li a {
+    -webkit-transition: all 0.3s linear;
+    transition: all 0.3s linear;
+    color: #745bc7;
+    text-align: center;
+    letter-spacing: 1px;
+    padding: 0 12px;
+    font-size: 11px;
+    font-size: 2.9333333333vw;
+    font-family: "Florsn01";
+}
+
+
+#discography .disco_menu.active {
+    font-weight: bold;
+}
+
+#discography .ALBUM li:nth-child(2) .disco_menu {
+    color: #ad57de;
+}
+
+#discography .DIGITAL li:nth-child(3) .disco_menu {
+    color: #ad57de;
+}
+
+#discography .disco_list {
+    margin: 0 auto;
+    width: calc(100% - 90px);
+}
+
+#discography .disco_list ul li {
+    margin-bottom: 50px;
+}
+
+#discography .disco_list ul li .disco_detail {
+    margin-top: 5px;
+    position: relative;
+    padding-right: 40px;
+}
+
+#discography .disco_list ul li .disco_detail .date {
+    color: #745bc7;
+    font-size: 9px;
+    font-size: 2.4vw;
+    letter-spacing: 2px;
+}
+
+#discography .disco_list ul li .disco_detail .tit {
+    font-size: 12px;
+    font-size: 3.2vw;
+}
+
+#discography .disco_list ul li .disco_detail i {
+    position: absolute;
+    font-size: 24px;
+    font-size: 6.4vw;
+    top: 5px;
+    right: 0;
+    color: #745bc7;
+}
+
+#discography .disco_single {
+    width: calc(100% - 90px);
+    margin: 60px auto;
+}
+
+#discography .disco_single .disco_img {
+    margin-bottom: 20px;
+}
+
+#discography .disco_single .disco_detail {
+    position: relative;
+    line-height: 1.7;
+    padding-right: 27%;
+}
+
+#discography .disco_single .disco_detail .date {
+    color: #745bc7;
+    font-size: 10px;
+    font-size: 2.6666666667vw;
+    letter-spacing: 1.5px;
+    line-height: 1.4;
+    color: #745bc7;
+}
+
+#discography .disco_single .disco_detail .tit {
+    font-size: 13px;
+    font-size: 3.4666666667vw;
+    margin-bottom: 5px;
+}
+
+#discography .disco_single .disco_detail .meta {
+    font-size: 9px;
+    font-size: 2.4vw;
+}
+
+#discography .disco_single .disco_detail .info {
+    margin-top: 1em;
+    font-size: 9px;
+    font-size: 2.4vw;
+}
+
+#discography .disco_single .disco_detail .links {
+    position: absolute;
+    right: 0;
+    top: -5px;
+    display: flex;
+}
+
+#discography .disco_single .disco_detail .links a {
+    color: #745bc7;
+}
+
+#discography .disco_single .disco_detail .link_music {
+    font-size: 25px;
+    font-size: 6.6666666667vw;
+    color: #745bc7;
+    margin-left: 15px;
+}
+
+#discography .disco_single .disco_detail .link_tunes {
+    font-size: 25px;
+    font-size: 6.6666666667vw;
+    color: #745bc7;
+    margin-left: 15px;
+}
+
+#discography .disco_single .disco_track {
+    margin-top: 40px;
+}
+
+#discography .disco_single .disco_track ul li {
+    text-indent: -1em;
+    padding-left: 1em;
+    margin-bottom: 1em;
+    font-size: 11px;
+    font-size: 2.9333333333vw;
+}
+
+#discography .disco_single .disco_track p {
+    line-height: 2.55;
+    font-size: 11px;
+    font-size: 2.9333333333vw;
+}
+
+#discography .disco_lyric {
+    margin-top: 40px;
+    font-size: 11px;
+    font-size: 2.9333333333vw;
+}

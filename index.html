@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My HTML5 Document</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css">
+
+</head>
+
+<body>
+    <section class="satu">
+        <nav>
+            <a href="index.html"><img src="images/logo_en.png"></a>
+            <div class="nav-links" id="nav-links">
+                <i class="openbtn" onclick="showMenu()"><img src="images/close.png"></i>
+                <ul>
+                    <li><a href="index.html">TOP</a></li>
+                    <li><a href="news.html">NEWS</a></li>
+                    <li><a href="profile.html">PROFILE</a></li>
+                    <li><a href="https://www.youtube.com/channel/UCB2tP2QfRG7hTra0KTOtTBg">MOVIE</a></li>
+                </ul>
+            </div>
+            <i class="closebtn" onclick="hideMenu()"><img src="images/ico_menu.png"></i>
+        </nav>
+        <div class="box">
+            <a href="https://tuyu-official.jp/undermentality/en/">
+                <img class="undermentality" src="images/tuyu_hero_btn-en.png">
+            </a>
+        </div>
+    </section>
+    <section class="dua">
+        <h1>NEWS</h1>
+        <div class="news">
+            <h4>2023.08.09</h4>
+            <h3>TUYU will perform at YouTube Music Weekend 7.0 supported by docomo</h3>
+            <h4>2023.07.13</h4>
+            <h3>“TUYU×GiGO CAMPAIGN～UNDER MENTALITY～” is held.</h3>
+            <h4>2023.06.09</h4>
+            <h3>The company has been selected to perform at WILD BUNCH FEST. 2023</h3>
+            <h4>2023.05.19</h4>
+            <h3>TUYU LIVE TOUR 2023 Under-Mentality will be held!!</h3>
+            <a href="" class="btn">MORE</a>
+        </div>
+    </section>
+    <section class="tiga">
+        <h1>MOVIE</h1>
+        <div class="carousel">
+            <div class="slide">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/F9sWMsUNDw0" frameborder="0"
+                    allowfullscreen></iframe>
+                <p>TUYU - What Sort of Ending Are You Wishing For</p>
+            </div>
+            <div class="slide">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/cp8UEv8i0lc" frameborder="0"
+                    allowfullscreen></iframe>
+                <p>TUYU - Would be nice if you grow up one day</p>
+            </div>
+            <div class="slide">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/TBoBfT-_sfM" frameborder="0"
+                    allowfullscreen></iframe>
+                <p>TUYU - Under Kids</p>
+            </div>
+            <div class="slide">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/M7FH1dL51oU" frameborder="0"
+                    allowfullscreen></iframe>
+                <p>Being low as dirt, taking what’s important from me</p>
+            </div>
+            <div class="slide">
+                <iframe width="100%" height="315" src="https://www.youtube.com/embed/6rg4cYlAKOc" frameborder="0"
+                    allowfullscreen></iframe>
+                <p>Loser Girl</p>
+            </div>
+        </div>
+        <a href="https://www.youtube.com/channel/UCB2tP2QfRG7hTra0KTOtTBg" class="btn">MORE</a>
+        </div>
+    </section>
+</body>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+<script src="script.js"></script>
+<script src="responsive.js"></script>
+
+</html>
